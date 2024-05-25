@@ -24,10 +24,12 @@ public class SweetFly{
 
             // Registrar a quantidade de assentos disponíveis em cada avião.
             if (opcoes == 2){
-
+                for (int i = 0; i < aviaoNum.length; i++){
+                    System.out.println(i+" - "+aviaoNum[i]);
             }
             
-        }
+            }
 
+        }
     }
 }
