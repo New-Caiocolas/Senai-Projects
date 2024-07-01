@@ -26,7 +26,11 @@ public class SweetFly{
             if (opcoes == 2){
                 for (int i = 0; i < aviaoNum.length; i++){
                     System.out.println(i+" - "+aviaoNum[i]);
-            }
+                }
+                
+                System.out.println("Qual avião deseja registrar os assentos:");
+                int assentosNum = s.nextInt();
+                
             
             }
 
