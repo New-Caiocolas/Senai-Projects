@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class listaCompras {
+
 public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     ArrayList<String> produtos = new ArrayList<String>();  
@@ -20,5 +21,16 @@ public static void main(String[] args) {
         System.out.println(i+" - "+produtos.get(i));
     }
 
+    System.out.print("Deseja remover algum número:");
+    String cont = sc.nextLine();
+    if ("Sn".contains(cont)){
+        System.out.print("Qual você deseja remover:");
+        int remove = sc.nextInt();
+        produtos.remove(remove);
+    }
+
+    for (int i = 0; i < produtos.size(); i++){
+        System.out.println(i+" - "+produtos.get(i));
+    }
 }
 }
