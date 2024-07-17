@@ -3,8 +3,8 @@ import java.util.*;
 public class listaCompras {
 
 public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    ArrayList<String> produtos = new ArrayList<String>();  
+    ArrayList<String> produtos = new ArrayList<String>();
+    Scanner sc = new Scanner(System.in);  
     
 
     while (true) {
@@ -23,14 +23,19 @@ public static void main(String[] args) {
 
     System.out.print("Deseja remover algum número:");
     String cont = sc.nextLine();
-    if ("Sn".contains(cont)){
+
+    while ("Ss".contains(cont)){
         System.out.print("Qual você deseja remover:");
         int remove = sc.nextInt();
         produtos.remove(remove);
+        System.out.print("Deseja continuar(S/N):");
+        String cont = sc.nextLine();
     }
 
     for (int i = 0; i < produtos.size(); i++){
         System.out.println(i+" - "+produtos.get(i));
     }
+
+
 }
 }
